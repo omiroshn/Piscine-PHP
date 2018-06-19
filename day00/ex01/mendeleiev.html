@@ -10,66 +10,58 @@
                 background-color: darkgrey;
             }
 
-            #table {
+            .table {
                 margin: 0 auto;
-                width: 100%;
-                max-width: 1800px;
-                padding: 10px;
+                /*width: 100%;*/
+                /*max-width: 1800px;*/
+                /*padding: 10px;*/
                 font-family: sans-serif;
             }
 
-
-            .list1 {
+            .list {
                 float: left;
-            }
-
-            .list2 {
-                float: left;
-            }
-
-            .list3 {
-                float: left;
-            }
-
-            .list4 {
-                float: left;
-            }
-
-            .list5 {
-                float: left;
-            }
-
-            .list6 {
-                float: left;
-            }
-
-            .list7 {
-                float: left;
-            }
-
-            .list8 {
-                float: left;
-            }
-
-            .list9 {
-                float: left;
-            }
-
-            .list10 {
-                float: left;
+                padding: 5px;
             }
 
             .cell {
-                font-size: 20px;
                 text-align: center;
                 border: 2px solid grey;
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+                font-size: 1vw;
             }
 
             .emptyCell {
-                font-size: 20px;
+                width: 100%;
+                height: 100%;
+                border: 3px solid transparent;
+                content: '\200b';
+                font-size: 1vw;
+            }
+
+            .numberCell {
+                width: 100%;
+                height: 100%;
+                font-size: 1vw;
                 text-align: center;
             }
 
+            .symbol {
+                font-size:112%;
+                font-weight: bold;
+            }
+            .weight {
+                font-size:80%;
+                text-align: right;
+            }
+            .name {
+                font-size:80%;
+            }
+            .number {
+                font-size:80%;
+                text-align: left;
+            }
 
             .air {background-color: #f0ff8f;}
             .alkali {background-color: #ff6666;}
@@ -86,192 +78,228 @@
     </head>
     <body>
         <h1>Periodic table</h1>
-        <div id="table">
-            <div class="list1">
-                <div class="emptyCell"><span style="font-size:112%;">1</span><br><span style="font-size:85%;">I A</span></div>
-                <div class="cell air"><span style="font-size:85%;">Hydrogen</span><br>1<br><span style="font-size:112%;font-weight: bold">H</span><br><span style="font-size:85%;">1.008</span></div>
-                <div class="cell alkali"><span style="font-size:85%;">Lithium</span><br>3<br><span style="font-size:112%;font-weight: bold">Li</span><br><span style="font-size:85%;">6.94</span></div>
-                <div class="cell alkali"><span style="font-size:85%;">Sodium</span><br>11<br><span style="font-size:112%;font-weight: bold">Na</span><br><span style="font-size:85%;">22.990</span></div>
-                <div class="cell alkali"><span style="font-size:85%;">Potassium</span><br>19<br><span style="font-size:112%;font-weight: bold">K</span><br><span style="font-size:85%;">39.098</span></div>
-                <div class="cell alkali"><span style="font-size:85%;">Rubidium</span><br>37<br><span style="font-size:112%;font-weight: bold">Rb</span><br><span style="font-size:85%;">85.468</span></div>
-                <div class="cell alkali"><span style="font-size:85%;">Caesium</span><br>55<br><span style="font-size:112%;font-weight: bold">Cs</span><br><span style="font-size:85%;">132.91</span></div>
-                <div class="cell alkali"><span style="font-size:85%;">Francium</span><br>87<br><span style="font-size:112%;font-weight: bold">Fr</span><br><span style="font-size:85%;">[223]</span></div>
+        <div class="table">
+            <div class="list">
+                <div class="numberCell"><span style="font-size:112%;">1</span><br><span class="number">I A</span></div>
+                <div class="cell air"><span class="number">Hydrogen</span><br>1<br><span class="symbol">H</span><br><span class="number">1.008</span></div>
+                <div class="cell alkali"><span class="number">Lithium</span><br>3<br><span class="symbol">Li</span><br><span class="number">6.94</span></div>
+                <div class="cell alkali"><span class="number">Sodium</span><br>11<br><span class="symbol">Na</span><br><span class="number">22.990</span></div>
+                <div class="cell alkali"><span class="number">Potassium</span><br>19<br><span class="symbol">K</span><br><span class="number">39.098</span></div>
+                <div class="cell alkali"><span class="number">Rubidium</span><br>37<br><span class="symbol">Rb</span><br><span class="number">85.468</span></div>
+                <div class="cell alkali"><span class="number">Caesium</span><br>55<br><span class="symbol">Cs</span><br><span class="number">132.91</span></div>
+                <div class="cell alkali"><span class="number">Francium</span><br>87<br><span class="symbol">Fr</span><br><span class="number">[223]</span></div>
             </div>
-            <div class="list2">
-                <div class="emptyCell"><span style="font-size:112%;">2</span><br><span style="font-size:85%;">II A</span></div>
-                <div class="cell earth"><span style="font-size:85%;">Beryllium</span><br>4<br><span style="font-size:112%;font-weight: bold">Be</span><br><span style="font-size:85%;">9.0122</span></div>
-                <div class="cell earth"><span style="font-size:85%;">Magnesium</span><br>12<br><span style="font-size:112%;font-weight: bold">Mg</span><br><span style="font-size:85%;">24.305</span></div>
-                <div class="cell earth"><span style="font-size:85%;">Calcium</span><br>20<br><span style="font-size:112%;font-weight: bold">Ca</span><br><span style="font-size:85%;">40.078</span></div>
-                <div class="cell earth"><span style="font-size:85%;">Strontium</span><br>38<br><span style="font-size:112%;font-weight: bold">Sr</span><br><span style="font-size:85%;">87.62</span></div>
-                <div class="cell earth"><span style="font-size:85%;">Barium</span><br>56<br><span style="font-size:112%;font-weight: bold">Ba</span><br><span style="font-size:85%;">137.33</span></div>
-                <div class="cell earth"><span style="font-size:85%;">Radium</span><br>88<br><span style="font-size:112%;font-weight: bold">Ra</span><br><span style="font-size:85%;">[226]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">2</span><br><span class="number">II A</span></div>
+                <div class="cell earth"><span class="number">Beryllium</span><br>4<br><span class="symbol">Be</span><br><span class="number">9.0122</span></div>
+                <div class="cell earth"><span class="number">Magnesium</span><br>12<br><span class="symbol">Mg</span><br><span class="number">24.305</span></div>
+                <div class="cell earth"><span class="number">Calcium</span><br>20<br><span class="symbol">Ca</span><br><span class="number">40.078</span></div>
+                <div class="cell earth"><span class="number">Strontium</span><br>38<br><span class="symbol">Sr</span><br><span class="number">87.62</span></div>
+                <div class="cell earth"><span class="number">Barium</span><br>56<br><span class="symbol">Ba</span><br><span class="number">137.33</span></div>
+                <div class="cell earth"><span class="number">Radium</span><br>88<br><span class="symbol">Ra</span><br><span class="number">[226]</span></div>
             </div>
-            <div class="list3">
-                <div class="emptyCell"><span style="font-size:112%;">3</span><br><span style="font-size:85%;">III B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Scandium</span><br>21<br><span style="font-size:112%;font-weight: bold">Sc</span><br><span style="font-size:85%;">44.956</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Yttrium</span><br>39<br><span style="font-size:112%;font-weight: bold">Y</span><br><span style="font-size:85%;">88.906</span></div>
-                <div class="cell bu"><span style="font-size:85%;">Lanthanum</span><br>57<br><span style="font-size:112%;font-weight: bold">La</span><br><span style="font-size:85%;">138.91</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Actinium</span><br>89<br><span style="font-size:112%;font-weight: bold">Ac</span><br><span style="font-size:85%;">[227]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">3</span><br><span class="number">III B</span></div>
+                <div class="cell centerleft"><span class="number">Scandium</span><br>21<br><span class="symbol">Sc</span><br><span class="number">44.956</span></div>
+                <div class="cell centerleft"><span class="number">Yttrium</span><br>39<br><span class="symbol">Y</span><br><span class="number">88.906</span></div>
+                <div class="cell bu"><span class="number">Lanthanum</span><br>57<br><span class="symbol">La</span><br><span class="number">138.91</span></div>
+                <div class="cell bb"><span class="number">Actinium</span><br>89<br><span class="symbol">Ac</span><br><span class="number">[227]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">4</span><br><span style="font-size:85%;">IV B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Titanium</span><br>22<br><span style="font-size:112%;font-weight: bold">Ti</span><br><span style="font-size:85%;">47.867</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Zirconium</span><br>40<br><span style="font-size:112%;font-weight: bold">Zr</span><br><span style="font-size:85%;">91.224</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Hafnium</span><br>72<br><span style="font-size:112%;font-weight: bold">Hf</span><br><span style="font-size:85%;">178.49</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Rutherfordium</span><br>104<br><span style="font-size:112%;font-weight: bold">Rf</span><br><span style="font-size:85%;">[267]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">4</span><br><span class="number">IV B</span></div>
+                <div class="cell centerleft"><span class="number">Titanium</span><br>22<br><span class="symbol">Ti</span><br><span class="number">47.867</span></div>
+                <div class="cell centerleft"><span class="number">Zirconium</span><br>40<br><span class="symbol">Zr</span><br><span class="number">91.224</span></div>
+                <div class="cell centerleft"><span class="number">Hafnium</span><br>72<br><span class="symbol">Hf</span><br><span class="number">178.49</span></div>
+                <div class="cell centerleft"><span class="number">Rutherfordium</span><br>104<br><span class="symbol">Rf</span><br><span class="number">[267]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Cerium</span><br>58<br><span style="font-size:112%;font-weight: bold">Ce</span><br><span style="font-size:85%;">140.12</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Thorium</span><br>90<br><span style="font-size:112%;font-weight: bold">Th</span><br><span style="font-size:85%;">232.04</span></div>
+                <div class="cell bu"><span class="number">Cerium</span><br>58<br><span class="symbol">Ce</span><br><span class="number">140.12</span></div>
+                <div class="cell bb"><span class="number">Thorium</span><br>90<br><span class="symbol">Th</span><br><span class="number">232.04</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">5</span><br><span style="font-size:85%;">V B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Vanadium</span><br>23<br><span style="font-size:112%;font-weight: bold">V</span><br><span style="font-size:85%;">50.942</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Niobium</span><br>41<br><span style="font-size:112%;font-weight: bold">Nb</span><br><span style="font-size:85%;">92.906</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Tantalum</span><br>73<br><span style="font-size:112%;font-weight: bold">Ta</span><br><span style="font-size:85%;">180.95</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Dubnium</span><br>105<br><span style="font-size:112%;font-weight: bold">Db</span><br><span style="font-size:85%;">[268]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">5</span><br><span class="number">V B</span></div>
+                <div class="cell centerleft"><span class="number">Vanadium</span><br>23<br><span class="symbol">V</span><br><span class="number">50.942</span></div>
+                <div class="cell centerleft"><span class="number">Niobium</span><br>41<br><span class="symbol">Nb</span><br><span class="number">92.906</span></div>
+                <div class="cell centerleft"><span class="number">Tantalum</span><br>73<br><span class="symbol">Ta</span><br><span class="number">180.95</span></div>
+                <div class="cell centerleft"><span class="number">Dubnium</span><br>105<br><span class="symbol">Db</span><br><span class="number">[268]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Praseodymium</span><br>59<br><span style="font-size:112%;font-weight: bold">Pr</span><br><span style="font-size:85%;">140.91</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Protactinium</span><br>91<br><span style="font-size:112%;font-weight: bold">Pa</span><br><span style="font-size:85%;">232.04</span></div>
+                <div class="cell bu"><span class="number">Praseodymium</span><br>59<br><span class="symbol">Pr</span><br><span class="number">140.91</span></div>
+                <div class="cell bb"><span class="number">Protactinium</span><br>91<br><span class="symbol">Pa</span><br><span class="number">232.04</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">6</span><br><span style="font-size:85%;">VI B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Chromium</span><br>24<br><span style="font-size:112%;font-weight: bold">Cr</span><br><span style="font-size:85%;">51.996</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Molybdenum</span><br>42<br><span style="font-size:112%;font-weight: bold">Mo</span><br><span style="font-size:85%;">95.95</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Tungsten</span><br>74<br><span style="font-size:112%;font-weight: bold">W</span><br><span style="font-size:85%;">183.84</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Seaborgium</span><br>106<br><span style="font-size:112%;font-weight: bold">Sg</span><br><span style="font-size:85%;">[269]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">6</span><br><span class="number">VI B</span></div>
+                <div class="cell centerleft"><span class="number">Chromium</span><br>24<br><span class="symbol">Cr</span><br><span class="number">51.996</span></div>
+                <div class="cell centerleft"><span class="number">Molybdenum</span><br>42<br><span class="symbol">Mo</span><br><span class="number">95.95</span></div>
+                <div class="cell centerleft"><span class="number">Tungsten</span><br>74<br><span class="symbol">W</span><br><span class="number">183.84</span></div>
+                <div class="cell centerleft"><span class="number">Seaborgium</span><br>106<br><span class="symbol">Sg</span><br><span class="number">[269]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Neodyminum</span><br>60<br><span style="font-size:112%;font-weight: bold">Nd</span><br><span style="font-size:85%;">144.24</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Uranium</span><br>92<br><span style="font-size:112%;font-weight: bold">U</span><br><span style="font-size:85%;">238.03</span></div>
+                <div class="cell bu"><span class="number">Neodyminum</span><br>60<br><span class="symbol">Nd</span><br><span class="number">144.24</span></div>
+                <div class="cell bb"><span class="number">Uranium</span><br>92<br><span class="symbol">U</span><br><span class="number">238.03</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">7</span><br><span style="font-size:85%;">VII B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Manganese</span><br>25<br><span style="font-size:112%;font-weight: bold">Mn</span><br><span style="font-size:85%;">54.938</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Technetium</span><br>43<br><span style="font-size:112%;font-weight: bold">Tc</span><br><span style="font-size:85%;">[98]</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Rhenium</span><br>75<br><span style="font-size:112%;font-weight: bold">Re</span><br><span style="font-size:85%;">186.21</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Bohrium</span><br>107<br><span style="font-size:112%;font-weight: bold">Bh</span><br><span style="font-size:85%;">[270]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">7</span><br><span class="number">VII B</span></div>
+                <div class="cell centerleft"><span class="number">Manganese</span><br>25<br><span class="symbol">Mn</span><br><span class="number">54.938</span></div>
+                <div class="cell centerleft"><span class="number">Technetium</span><br>43<br><span class="symbol">Tc</span><br><span class="number">[98]</span></div>
+                <div class="cell centerleft"><span class="number">Rhenium</span><br>75<br><span class="symbol">Re</span><br><span class="number">186.21</span></div>
+                <div class="cell centerleft"><span class="number">Bohrium</span><br>107<br><span class="symbol">Bh</span><br><span class="number">[270]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Promethium</span><br>61<br><span style="font-size:112%;font-weight: bold">Rm</span><br><span style="font-size:85%;">[145]</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Neptunium</span><br>93<br><span style="font-size:112%;font-weight: bold">Np</span><br><span style="font-size:85%;">[237]</span></div>
+                <div class="cell bu"><span class="number">Promethium</span><br>61<br><span class="symbol">Rm</span><br><span class="number">[145]</span></div>
+                <div class="cell bb"><span class="number">Neptunium</span><br>93<br><span class="symbol">Np</span><br><span class="number">[237]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">8</span><br><span style="font-size:85%;">VIII B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Iron</span><br>26<br><span style="font-size:112%;font-weight: bold">Fe</span><br><span style="font-size:85%;">55.845</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Ruthenium</span><br>44<br><span style="font-size:112%;font-weight: bold">Ru</span><br><span style="font-size:85%;">101.07</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Osmium</span><br>76<br><span style="font-size:112%;font-weight: bold">Os</span><br><span style="font-size:85%;">190.23</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Hassium</span><br>108<br><span style="font-size:112%;font-weight: bold">Hs</span><br><span style="font-size:85%;">[270]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">8</span><br><span class="number">VIII B</span></div>
+                <div class="cell centerleft"><span class="number">Iron</span><br>26<br><span class="symbol">Fe</span><br><span class="number">55.845</span></div>
+                <div class="cell centerleft"><span class="number">Ruthenium</span><br>44<br><span class="symbol">Ru</span><br><span class="number">101.07</span></div>
+                <div class="cell centerleft"><span class="number">Osmium</span><br>76<br><span class="symbol">Os</span><br><span class="number">190.23</span></div>
+                <div class="cell centerleft"><span class="number">Hassium</span><br>108<br><span class="symbol">Hs</span><br><span class="number">[270]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Samarium</span><br>62<br><span style="font-size:112%;font-weight: bold">Sm</span><br><span style="font-size:85%;">150.36</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Plutonium</span><br>94<br><span style="font-size:112%;font-weight: bold">Pu</span><br><span style="font-size:85%;">[244]</span></div>
+                <div class="cell bu"><span class="number">Samarium</span><br>62<br><span class="symbol">Sm</span><br><span class="number">150.36</span></div>
+                <div class="cell bb"><span class="number">Plutonium</span><br>94<br><span class="symbol">Pu</span><br><span class="number">[244]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">9</span><br><span style="font-size:85%;">VIII B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Cobalt</span><br>27<br><span style="font-size:112%;font-weight: bold">Co</span><br><span style="font-size:85%;">58.933</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Rhodium</span><br>45<br><span style="font-size:112%;font-weight: bold">Rh</span><br><span style="font-size:85%;">102.91</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Iridium</span><br>77<br><span style="font-size:112%;font-weight: bold">Ir</span><br><span style="font-size:85%;">192.91</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Meitnerium</span><br>109<br><span style="font-size:112%;font-weight: bold">Mt</span><br><span style="font-size:85%;">[278]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">9</span><br><span class="number">VIII B</span></div>
+                <div class="cell centerleft"><span class="number">Cobalt</span><br>27<br><span class="symbol">Co</span><br><span class="number">58.933</span></div>
+                <div class="cell centerleft"><span class="number">Rhodium</span><br>45<br><span class="symbol">Rh</span><br><span class="number">102.91</span></div>
+                <div class="cell centerleft"><span class="number">Iridium</span><br>77<br><span class="symbol">Ir</span><br><span class="number">192.91</span></div>
+                <div class="cell centerrb"><span class="number">Meitnerium</span><br>109<br><span class="symbol">Mt</span><br><span class="number">[278]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Europium</span><br>63<br><span style="font-size:112%;font-weight: bold">Eu</span><br><span style="font-size:85%;">151.96</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Americium</span><br>95<br><span style="font-size:112%;font-weight: bold">Am</span><br><span style="font-size:85%;">[243]</span></div>
+                <div class="cell bu"><span class="number">Europium</span><br>63<br><span class="symbol">Eu</span><br><span class="number">151.96</span></div>
+                <div class="cell bb"><span class="number">Americium</span><br>95<br><span class="symbol">Am</span><br><span class="number">[243]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">10</span><br><span style="font-size:85%;">VIII B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Nickel</span><br>28<br><span style="font-size:112%;font-weight: bold">Ni</span><br><span style="font-size:85%;">58.693</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Palladium</span><br>46<br><span style="font-size:112%;font-weight: bold">Pd</span><br><span style="font-size:85%;">106.42</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Platinum</span><br>78<br><span style="font-size:112%;font-weight: bold">Pt</span><br><span style="font-size:85%;">195.08</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Darmstadtium</span><br>110<br><span style="font-size:112%;font-weight: bold">Ds</span><br><span style="font-size:85%;">[281]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">10</span><br><span class="number">VIII B</span></div>
+                <div class="cell centerleft"><span class="number">Nickel</span><br>28<br><span class="symbol">Ni</span><br><span class="number">58.693</span></div>
+                <div class="cell centerleft"><span class="number">Palladium</span><br>46<br><span class="symbol">Pd</span><br><span class="number">106.42</span></div>
+                <div class="cell centerleft"><span class="number">Platinum</span><br>78<br><span class="symbol">Pt</span><br><span class="number">195.08</span></div>
+                <div class="cell centerrb"><span class="number">Darmstadtium</span><br>110<br><span class="symbol">Ds</span><br><span class="number">[281]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Gadolinium</span><br>64<br><span style="font-size:112%;font-weight: bold">Gd</span><br><span style="font-size:85%;">157.25</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Curium</span><br>96<br><span style="font-size:112%;font-weight: bold">Cm</span><br><span style="font-size:85%;">[247]</span></div>
+                <div class="cell bu"><span class="number">Gadolinium</span><br>64<br><span class="symbol">Gd</span><br><span class="number">157.25</span></div>
+                <div class="cell bb"><span class="number">Curium</span><br>96<br><span class="symbol">Cm</span><br><span class="number">[247]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">11</span><br><span style="font-size:85%;">I B</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Copper</span><br>29<br><span style="font-size:112%;font-weight: bold">Cu</span><br><span style="font-size:85%;">63.546</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Silver</span><br>47<br><span style="font-size:112%;font-weight: bold">Ag</span><br><span style="font-size:85%;">107.87</span></div>
-                <div class="cell centerleft"><span style="font-size:85%;">Gold</span><br>79<br><span style="font-size:112%;font-weight: bold">Au</span><br><span style="font-size:85%;">196.97</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Roentgenium</span><br>111<br><span style="font-size:112%;font-weight: bold">Rg</span><br><span style="font-size:85%;">[282]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">11</span><br><span class="number">I B</span></div>
+                <div class="cell centerleft"><span class="number">Copper</span><br>29<br><span class="symbol">Cu</span><br><span class="number">63.546</span></div>
+                <div class="cell centerleft"><span class="number">Silver</span><br>47<br><span class="symbol">Ag</span><br><span class="number">107.87</span></div>
+                <div class="cell centerleft"><span class="number">Gold</span><br>79<br><span class="symbol">Au</span><br><span class="number">196.97</span></div>
+                <div class="cell centerrb"><span class="number">Roentgenium</span><br>111<br><span class="symbol">Rg</span><br><span class="number">[282]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Terbium</span><br>65<br><span style="font-size:112%;font-weight: bold">Tb</span><br><span style="font-size:85%;">158.93</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Berkelium</span><br>97<br><span style="font-size:112%;font-weight: bold">Bk</span><br><span style="font-size:85%;">[247]</span></div>
+                <div class="cell bu"><span class="number">Terbium</span><br>65<br><span class="symbol">Tb</span><br><span class="number">158.93</span></div>
+                <div class="cell bb"><span class="number">Berkelium</span><br>97<br><span class="symbol">Bk</span><br><span class="number">[247]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">12</span><br><span style="font-size:85%;">II B</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Zinc</span><br>30<br><span style="font-size:112%;font-weight: bold">Zn</span><br><span style="font-size:85%;">65.38</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Cadmium</span><br>48<br><span style="font-size:112%;font-weight: bold">Cd</span><br><span style="font-size:85%;">112.41</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Mercury</span><br>80<br><span style="font-size:112%;font-weight: bold">Hg</span><br><span style="font-size:85%;">200.59</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Copernicium</span><br>112<br><span style="font-size:112%;font-weight: bold">Cn</span><br><span style="font-size:85%;">[285]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">12</span><br><span class="number">II B</span></div>
+                <div class="cell centerrightc"><span class="number">Zinc</span><br>30<br><span class="symbol">Zn</span><br><span class="number">65.38</span></div>
+                <div class="cell centerrightc"><span class="number">Cadmium</span><br>48<br><span class="symbol">Cd</span><br><span class="number">112.41</span></div>
+                <div class="cell centerrightc"><span class="number">Mercury</span><br>80<br><span class="symbol">Hg</span><br><span class="number">200.59</span></div>
+                <div class="cell centerrightc"><span class="number">Copernicium</span><br>112<br><span class="symbol">Cn</span><br><span class="number">[285]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Dysprosium</span><br>66<br><span style="font-size:112%;font-weight: bold">Dy</span><br><span style="font-size:85%;">162.50</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Californium</span><br>98<br><span style="font-size:112%;font-weight: bold">Cf</span><br><span style="font-size:85%;">[251]</span></div>
+                <div class="cell bu"><span class="number">Dysprosium</span><br>66<br><span class="symbol">Dy</span><br><span class="number">162.50</span></div>
+                <div class="cell bb"><span class="number">Californium</span><br>98<br><span class="symbol">Cf</span><br><span class="number">[251]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">13</span><br><span style="font-size:85%;">III A</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Boron</span><br>5<br><span style="font-size:112%;font-weight: bold">B</span><br><span style="font-size:85%;">10.81</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Aluminium</span><br>13<br><span style="font-size:112%;font-weight: bold">Al</span><br><span style="font-size:85%;">26.982</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Gallium</span><br>31<br><span style="font-size:112%;font-weight: bold">Ga</span><br><span style="font-size:85%;">69.723</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Indium</span><br>49<br><span style="font-size:112%;font-weight: bold">In</span><br><span style="font-size:85%;">114.82</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Thallium</span><br>81<br><span style="font-size:112%;font-weight: bold">Tl</span><br><span style="font-size:85%;">204.38</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Nihonium</span><br>113<br><span style="font-size:112%;font-weight: bold">Nh</span><br><span style="font-size:85%;">[286]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">13</span><br><span class="number">III A</span></div>
+                <div class="cell centerru"><span class="number">Boron</span><br>5<br><span class="symbol">B</span><br><span class="number">10.81</span></div>
+                <div class="cell centerrightc"><span class="number">Aluminium</span><br>13<br><span class="symbol">Al</span><br><span class="number">26.982</span></div>
+                <div class="cell centerrightc"><span class="number">Gallium</span><br>31<br><span class="symbol">Ga</span><br><span class="number">69.723</span></div>
+                <div class="cell centerrightc"><span class="number">Indium</span><br>49<br><span class="symbol">In</span><br><span class="number">114.82</span></div>
+                <div class="cell centerrightc"><span class="number">Thallium</span><br>81<br><span class="symbol">Tl</span><br><span class="number">204.38</span></div>
+                <div class="cell centerrb"><span class="number">Nihonium</span><br>113<br><span class="symbol">Nh</span><br><span class="number">[286]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Holmium</span><br>67<br><span style="font-size:112%;font-weight: bold">Ho</span><br><span style="font-size:85%;">164.93</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Einsteinium</span><br>99<br><span style="font-size:112%;font-weight: bold">Es</span><br><span style="font-size:85%;">[252]</span></div>
+                <div class="cell bu"><span class="number">Holmium</span><br>67<br><span class="symbol">Ho</span><br><span class="number">164.93</span></div>
+                <div class="cell bb"><span class="number">Einsteinium</span><br>99<br><span class="symbol">Es</span><br><span class="number">[252]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">14</span><br><span style="font-size:85%;">IV A</span></div>
-                <div class="cell air"><span style="font-size:85%;">Carbon</span><br>6<br><span style="font-size:112%;font-weight: bold">C</span><br><span style="font-size:85%;">12.011</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Silicon</span><br>14<br><span style="font-size:112%;font-weight: bold">Si</span><br><span style="font-size:85%;">28.085</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Germanium</span><br>32<br><span style="font-size:112%;font-weight: bold">Ge</span><br><span style="font-size:85%;">72.630</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Tin</span><br>50<br><span style="font-size:112%;font-weight: bold">Sn</span><br><span style="font-size:85%;">118.71</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Lead</span><br>82<br><span style="font-size:112%;font-weight: bold">Pb</span><br><span style="font-size:85%;">207.2</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Flerovium</span><br>114<br><span style="font-size:112%;font-weight: bold">Fl</span><br><span style="font-size:85%;">[289]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">14</span><br><span class="number">IV A</span></div>
+                <div class="cell air"><span class="number">Carbon</span><br>6<br><span class="symbol">C</span><br><span class="number">12.011</span></div>
+                <div class="cell centerru"><span class="number">Silicon</span><br>14<br><span class="symbol">Si</span><br><span class="number">28.085</span></div>
+                <div class="cell centerru"><span class="number">Germanium</span><br>32<br><span class="symbol">Ge</span><br><span class="number">72.630</span></div>
+                <div class="cell centerrightc"><span class="number">Tin</span><br>50<br><span class="symbol">Sn</span><br><span class="number">118.71</span></div>
+                <div class="cell centerrightc"><span class="number">Lead</span><br>82<br><span class="symbol">Pb</span><br><span class="number">207.2</span></div>
+                <div class="cell centerrb"><span class="number">Flerovium</span><br>114<br><span class="symbol">Fl</span><br><span class="number">[289]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Erbium</span><br>68<br><span style="font-size:112%;font-weight: bold">Er</span><br><span style="font-size:85%;">167.26</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Fermium</span><br>100<br><span style="font-size:112%;font-weight: bold">Fm</span><br><span style="font-size:85%;">[257]</span></div>
+                <div class="cell bu"><span class="number">Erbium</span><br>68<br><span class="symbol">Er</span><br><span class="number">167.26</span></div>
+                <div class="cell bb"><span class="number">Fermium</span><br>100<br><span class="symbol">Fm</span><br><span class="number">[257]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">15</span><br><span style="font-size:85%;">V A</span></div>
-                <div class="cell air"><span style="font-size:85%;">Nitrogen</span><br>7<br><span style="font-size:112%;font-weight: bold">N</span><br><span style="font-size:85%;">14.007</span></div>
-                <div class="cell air"><span style="font-size:85%;">Phosphorus</span><br>15<br><span style="font-size:112%;font-weight: bold">P</span><br><span style="font-size:85%;">30.974</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Arsenic</span><br>33<br><span style="font-size:112%;font-weight: bold">As</span><br><span style="font-size:85%;">74.922</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Antimony</span><br>51<br><span style="font-size:112%;font-weight: bold">Sb</span><br><span style="font-size:85%;">121.76</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Bismuth</span><br>83<br><span style="font-size:112%;font-weight: bold">Bi</span><br><span style="font-size:85%;">208.98</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Moscovium</span><br>115<br><span style="font-size:112%;font-weight: bold">Mc</span><br><span style="font-size:85%;">[290]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">15</span><br><span class="number">V A</span></div>
+                <div class="cell air"><span class="number">Nitrogen</span><br>7<br><span class="symbol">N</span><br><span class="number">14.007</span></div>
+                <div class="cell air"><span class="number">Phosphorus</span><br>15<br><span class="symbol">P</span><br><span class="number">30.974</span></div>
+                <div class="cell centerru"><span class="number">Arsenic</span><br>33<br><span class="symbol">As</span><br><span class="number">74.922</span></div>
+                <div class="cell centerru"><span class="number">Antimony</span><br>51<br><span class="symbol">Sb</span><br><span class="number">121.76</span></div>
+                <div class="cell centerrightc"><span class="number">Bismuth</span><br>83<br><span class="symbol">Bi</span><br><span class="number">208.98</span></div>
+                <div class="cell centerrb"><span class="number">Moscovium</span><br>115<br><span class="symbol">Mc</span><br><span class="number">[290]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Thulium</span><br>69<br><span style="font-size:112%;font-weight: bold">Tm</span><br><span style="font-size:85%;">168.93</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Mendelevium</span><br>101<br><span style="font-size:112%;font-weight: bold">Md</span><br><span style="font-size:85%;">[258]</span></div>
+                <div class="cell bu"><span class="number">Thulium</span><br>69<br><span class="symbol">Tm</span><br><span class="number">168.93</span></div>
+                <div class="cell bb"><span class="number">Mendelevium</span><br>101<br><span class="symbol">Md</span><br><span class="number">[258]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">16</span><br><span style="font-size:85%;">VI A</span></div>
-                <div class="cell air"><span style="font-size:85%;">Oxygen</span><br>8<br><span style="font-size:112%;font-weight: bold">O</span><br><span style="font-size:85%;">15.999</span></div>
-                <div class="cell air"><span style="font-size:85%;">Sulfur</span><br>16<br><span style="font-size:112%;font-weight: bold">S</span><br><span style="font-size:85%;">32.06</span></div>
-                <div class="cell air"><span style="font-size:85%;">Selenium</span><br>34<br><span style="font-size:112%;font-weight: bold">Se</span><br><span style="font-size:85%;">78.971</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Tellurium</span><br>52<br><span style="font-size:112%;font-weight: bold">Te</span><br><span style="font-size:85%;">127.60</span></div>
-                <div class="cell centerrightc"><span style="font-size:85%;">Polonium</span><br>84<br><span style="font-size:112%;font-weight: bold">Po</span><br><span style="font-size:85%;">[209]</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Livermorium</span><br>116<br><span style="font-size:112%;font-weight: bold">Lv</span><br><span style="font-size:85%;">[293]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">16</span><br><span class="number">VI A</span></div>
+                <div class="cell air"><span class="number">Oxygen</span><br>8<br><span class="symbol">O</span><br><span class="number">15.999</span></div>
+                <div class="cell air"><span class="number">Sulfur</span><br>16<br><span class="symbol">S</span><br><span class="number">32.06</span></div>
+                <div class="cell air"><span class="number">Selenium</span><br>34<br><span class="symbol">Se</span><br><span class="number">78.971</span></div>
+                <div class="cell centerru"><span class="number">Tellurium</span><br>52<br><span class="symbol">Te</span><br><span class="number">127.60</span></div>
+                <div class="cell centerrightc"><span class="number">Polonium</span><br>84<br><span class="symbol">Po</span><br><span class="number">[209]</span></div>
+                <div class="cell centerrb"><span class="number">Livermorium</span><br>116<br><span class="symbol">Lv</span><br><span class="number">[293]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Ytterbium</span><br>70<br><span style="font-size:112%;font-weight: bold">Yb</span><br><span style="font-size:85%;">173.05</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Nobelium</span><br>102<br><span style="font-size:112%;font-weight: bold">No</span><br><span style="font-size:85%;">[259]</span></div>
+                <div class="cell bu"><span class="number">Ytterbium</span><br>70<br><span class="symbol">Yb</span><br><span class="number">173.05</span></div>
+                <div class="cell bb"><span class="number">Nobelium</span><br>102<br><span class="symbol">No</span><br><span class="number">[259]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">17</span><br><span style="font-size:85%;">VII A</span></div>
-                <div class="cell air"><span style="font-size:85%;">Fluorine</span><br>9<br><span style="font-size:112%;font-weight: bold">F</span><br><span style="font-size:85%;">18.998</span></div>
-                <div class="cell air"><span style="font-size:85%;">Chlorine</span><br>17<br><span style="font-size:112%;font-weight: bold">Cl</span><br><span style="font-size:85%;">35.45</span></div>
-                <div class="cell air"><span style="font-size:85%;">Bromine</span><br>35<br><span style="font-size:112%;font-weight: bold">Br</span><br><span style="font-size:85%;">79.904</span></div>
-                <div class="cell air"><span style="font-size:85%;">Iodine</span><br>53<br><span style="font-size:112%;font-weight: bold">I</span><br><span style="font-size:85%;">126.90</span></div>
-                <div class="cell centerru"><span style="font-size:85%;">Astatine</span><br>85<br><span style="font-size:112%;font-weight: bold">At</span><br><span style="font-size:85%;">[210]</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Tennessine</span><br>117<br><span style="font-size:112%;font-weight: bold">Ts</span><br><span style="font-size:85%;">[294]</span></div>
+            <div class="list">
+                <div class="emptyCell"><br><br><br><br></div>
+                <div class="numberCell"><span style="font-size:112%;">17</span><br><span class="number">VII A</span></div>
+                <div class="cell air"><span class="number">Fluorine</span><br>9<br><span class="symbol">F</span><br><span class="number">18.998</span></div>
+                <div class="cell air"><span class="number">Chlorine</span><br>17<br><span class="symbol">Cl</span><br><span class="number">35.45</span></div>
+                <div class="cell air"><span class="number">Bromine</span><br>35<br><span class="symbol">Br</span><br><span class="number">79.904</span></div>
+                <div class="cell air"><span class="number">Iodine</span><br>53<br><span class="symbol">I</span><br><span class="number">126.90</span></div>
+                <div class="cell centerru"><span class="number">Astatine</span><br>85<br><span class="symbol">At</span><br><span class="number">[210]</span></div>
+                <div class="cell centerrb"><span class="number">Tennessine</span><br>117<br><span class="symbol">Ts</span><br><span class="number">[294]</span></div>
                 <br>
-                <div class="cell bu"><span style="font-size:85%;">Lutetium</span><br>71<br><span style="font-size:112%;font-weight: bold">Lu</span><br><span style="font-size:85%;">174.97</span></div>
-                <div class="cell bb"><span style="font-size:85%;">Lawrencium</span><br>103<br><span style="font-size:112%;font-weight: bold">Lr</span><br><span style="font-size:85%;">[266]</span></div>
+                <div class="cell bu"><span class="number">Lutetium</span><br>71<br><span class="symbol">Lu</span><br><span class="number">174.97</span></div>
+                <div class="cell bb"><span class="number">Lawrencium</span><br>103<br><span class="symbol">Lr</span><br><span class="number">[266]</span></div>
             </div>
-            <div class="list4">
-                <div class="emptyCell"><span style="font-size:112%;">18</span><br><span style="font-size:85%;">VIII A</span></div>
-                <div class="cell centerright"><span style="font-size:85%;">Helium</span><br>2<br><span style="font-size:112%;font-weight: bold">He</span><br><span style="font-size:85%;">4.0026</span></div>
-                <div class="cell centerright"><span style="font-size:85%;">Neon</span><br>10<br><span style="font-size:112%;font-weight: bold">Ne</span><br><span style="font-size:85%;">20.180</span></div>
-                <div class="cell centerright"><span style="font-size:85%;">Argon</span><br>18<br><span style="font-size:112%;font-weight: bold">Ar</span><br><span style="font-size:85%;">39.948</span></div>
-                <div class="cell centerright"><span style="font-size:85%;">Krypton</span><br>36<br><span style="font-size:112%;font-weight: bold">Kr</span><br><span style="font-size:85%;">83.789</span></div>
-                <div class="cell centerright"><span style="font-size:85%;">Xenon</span><br>54<br><span style="font-size:112%;font-weight: bold">Xe</span><br><span style="font-size:85%;">131.29</span></div>
-                <div class="cell centerright"><span style="font-size:85%;">Radon</span><br>86<br><span style="font-size:112%;font-weight: bold">Rn</span><br><span style="font-size:85%;">[222]</span></div>
-                <div class="cell centerrb"><span style="font-size:85%;">Oganesson</span><br>118<br><span style="font-size:112%;font-weight: bold">Og</span><br><span style="font-size:85%;">[294]</span></div>
+            <div class="list">
+                <div class="numberCell"><span style="font-size:112%;">18</span><br><span class="number">VIII A</span></div>
+                <div class="cell centerright"><span class="number">Helium</span><br>2<br><span class="symbol">He</span><br><span class="number">4.0026</span></div>
+                <div class="cell centerright"><span class="number">Neon</span><br>10<br><span class="symbol">Ne</span><br><span class="number">20.180</span></div>
+                <div class="cell centerright"><span class="number">Argon</span><br>18<br><span class="symbol">Ar</span><br><span class="number">39.948</span></div>
+                <div class="cell centerright"><span class="number">Krypton</span><br>36<br><span class="symbol">Kr</span><br><span class="number">83.789</span></div>
+                <div class="cell centerright"><span class="number">Xenon</span><br>54<br><span class="symbol">Xe</span><br><span class="number">131.29</span></div>
+                <div class="cell centerright"><span class="number">Radon</span><br>86<br><span class="symbol">Rn</span><br><span class="number">[222]</span></div>
+                <div class="cell centerrb"><span class="number">Oganesson</span><br>118<br><span class="symbol">Og</span><br><span class="number">[294]</span></div>
             </div>
         </div>
     </body>
