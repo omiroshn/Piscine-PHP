@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b35272e-f2fd-47d9-b430-4eec4f23c850" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/book.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/brick.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/chat-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/close.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/cluster.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/day_of_the_42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/doft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/loupe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/main.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/oeil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/outil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/reload.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day00/ex02/towel.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day00/ex00/basics.html" afterPath="$PROJECT_DIR$/day00/ex00/basics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day00/ex01/mendeleiev.html" afterPath="$PROJECT_DIR$/day00/ex01/mendeleiev.html" />
-    </list>
+    <list default="true" id="7b35272e-f2fd-47d9-b430-4eec4f23c850" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -136,12 +119,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529420589471</updated>
       <workItem from="1529420590578" duration="6070000" />
-      <workItem from="1529433365973" duration="4128000" />
+      <workItem from="1529433365973" duration="4364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10198000" />
+    <option name="totallyTimeSpent" value="10434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
