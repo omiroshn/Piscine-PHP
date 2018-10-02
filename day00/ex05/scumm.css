@@ -1,0 +1,218 @@
+body {
+	background-color: #505050;
+	margin: 18px 0 0 8px;
+}
+
+header {
+	height: 137px;
+	width: 1420px;
+	position: relative;
+}
+
+header, .left-menu, .right-menu, .content, .chat {
+	border-radius: 9px;
+	box-shadow: 10px 10px 10px #000000;
+	background-color: #909090;
+}
+
+#day42 {
+	height: 110px;
+	margin: 10px 0 0 10px;
+}
+
+#search {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+header img.close, header img.reload {
+	position: absolute;
+	right: 10px;
+	height: 20px;
+	width: 20px;
+}
+
+header .close {
+	bottom: 10px;
+}
+
+header .reload {
+	top: 10px;
+}
+
+#reload:hover {
+	transform: rotate(360deg);
+	transition: transform 1s;
+}
+
+#close:hover {
+	transform: rotate(360deg);
+	transition: transform 1s;
+}
+
+#brick-wall {
+	width: 120px;
+	height: 70px;
+	background-image: url("resources/brick.jpg");
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin:-5px 0 0 -25px;
+}
+
+#brick-wall p {
+	display: none;
+	color: white;
+	font-weight: bold;
+}
+
+#brick-wall:hover > p {
+	display: block;
+}
+
+#book {
+	width: 70px;
+	height: 100px;
+}
+
+#book:hover {
+	transform: rotate(90deg);
+	transition: transform 1s;
+}
+
+#towel {
+	width: 70px;
+	height: 50px;
+}
+
+#towel:hover {
+	transform: translate(10%, 10%);
+	transition: transform 1s;
+}
+
+#all {
+	margin: 0 auto;
+	width: 1420px;
+}
+
+.left-menu{
+	width: 105px;
+	height: 410px;
+	float: left;
+	margin: 20px 0 0 30px;
+	padding: 15px 0 0 35px;
+}
+
+.left-menu img, .right-menu img {
+	width: 70px;
+	margin-bottom: 6px;
+}
+
+.left-menu img.selected:hover {
+	outline: 4px solid red;
+}
+
+.red-border {
+	outline: 5px solid red;
+}
+
+.right-menu{
+	width: 105px;
+	height: 410px;
+	float: left;
+	margin: 20px 0 0 30px;
+	padding: 15px 0 0 35px;
+}
+
+.right-menu img {
+	width: 70px;
+	margin-bottom: 6px;
+}
+
+.content {
+	margin: 20px 0 0 30px;
+	width: 1020px;
+	height: 582px;
+	float: left;
+	position: relative;
+}
+
+.initial-cluster {
+	margin: 10px;
+	width: 1000px;
+	height: 562px;
+}
+
+.resize {
+	width: 2048px;
+	height: 1152px;
+}
+
+.chat {
+	display: none;
+	width: 500px;
+	position: relative;
+	bottom: 100px;
+	left: -250px;
+	padding: 5px;
+	background-color: #88ff89;
+}
+
+.display-chat {
+	display: block;
+}
+
+.chat span.big {
+	font-family: Times;
+	font-size: 31px;
+}
+
+.chat span.shadow {
+	text-shadow: 5px 5px 5px #ff0000;
+}
+
+.chat span.italic {
+	font-style: italic;
+}
+
+.chat form {
+	height: 22px;
+}
+
+.chat form input[type="button"] {
+	margin-left: 4px;
+	font-size:12px;
+	letter-spacing: 1px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+}
+
+.chat p {
+	margin: 0;
+}
+
+.chat p:nth-child(2) {
+	font-style: italic;
+}
+
+#response-input {
+	width: 80%;
+}
+
+.response {
+	font-style: italic;
+	color: #000000;
+}
+
+.find-item {
+	opacity: 0.5;
+}
+
+.find-item-done {
+	opacity: 1;
+}
+
+.swipe {
+	transform: translate(160%, 0%);
+	transition: transform 1s;
+}

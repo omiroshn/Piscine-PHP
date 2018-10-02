@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Day of the 42</title>
+		<link rel="stylesheet" type="text/css" href="scumm.css">
+	</head>
+	<body>
+		<div id="all">
+			<header>
+				<img id="day42" src="resources/day_of_the_42.png" alt="logo" title="Logo">
+				<img id="search" src="resources/loupe.png" alt="Search" title="Search">
+				<a href="http://www.disney.com" target="_blank">
+					<img id="reload" class="reload" src="resources/reload.png" alt="Start from the beginning" title="Start from the beginning">
+				</a>
+				<a href="http://www.relaischateaux.com" target="_blank">
+					<img id="close" class="close" src="resources/close.gif" alt="Disconnect" title="Disconnect">
+				</a>
+			</header>
+			<div class="left-menu">
+				<img id="advance" class="selected" src="resources/arrow.png" alt="Advance" title="Advance">
+				<img id="take" class="selected" src="resources/main.png" alt="Take" title="Take">
+				<img id="look" class="selected" src="resources/oeil.png" alt="Look" title="Look">
+				<img id="use" class="selected" src="resources/outil.png" alt="Use" title="Use">
+				<img id="speak" class="selected" src="resources/chat-icon.png" alt="Speak" title="Speak">
+			</div>
+			<div class="content">
+				<img id="cluster" class="initial-cluster" src="resources/cluster.jpg" alt="cluster" title="Click on element" usemap="#clustermap">
+				<map name="clustermap">
+					<area id="chair" shape="rect" coords="330,330,450,550" href="http://www.ikea.com" title="Ikea" target="_blank">
+					<area id="monitor" shape="rect" coords="790,320,980,480" href="http://www.apple.com" title="iMac" target="_blank">
+					<area id="find-loop" shape="circle" coords="175,250,20">
+				</map>
+				<div class="chat">
+					Vous <span class="big">entrez</span> alors dans une grande piece remplie<br>d'<span class="shadow">ordinateurs</span>...<br>
+					<span class="italic">- Bonjour, vous êtes nouveau ici ?</span>
+					<form action="#">
+						<input id="response-input" type="text">
+						<input id="respond-button" type="button" value="Repondre">
+					</form>
+				</div>
+			</div>
+			<div class="right-menu">
+				<img id="book" src="resources/book.png" alt="book" title="Book">
+				<img id="towel" src="resources/towel.png" alt="towel" title="Towel">
+				<div id="brick-wall" title="Wall">
+					<p>Hello there</p>
+				</div>
+			</div>
+		</div>
+	</body>
+<script src="scumm.js"></script>
+</html>
