@@ -1,21 +1,5 @@
 #!/usr/bin/php
 <?php
-	function ft_split($string) {
-		if ($string) {
-			$line = explode(" ", $string);
-			$data = array();
-			foreach ($line as $value) {
-				if ($value != "") {
-					array_push($data, $value);
-				}
-			}
-			return $data;
-		}
-		else {
-			echo "no args\n";
-		}
-	}
-
 	if ($argc >= 2) {
 		$list = array();
 		for ($i = 1; $i < $argc; $i++) {
@@ -26,7 +10,26 @@
 		}
 		sort($list);
 		for ($i = 0; $i < count($list); $i++) {
-			echo "$list[$i]\n";
+			if ($list[$i] != "") {
+				echo "$list[$i]\n";
+			}
+		}
+	} else {
+		echo "no argc\n";
+	}
+
+	function ft_split($string) {
+		if ($string) {
+			$string = trim($string);
+			while (strstr($string, "  ")) {
+				$string = str_ireplace("  ", " ", $string);
+			}
+			$line = explode(" ", $string);
+			$data = array();
+			foreach ($line as $value) {
+				array_push($data, $value);
+			}
+			return $data;
 		}
 	}
 ?>

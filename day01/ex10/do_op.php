@@ -8,6 +8,12 @@
 			echo "Wrong arguments";
 			exit (1);
 		}
+		if (strlen($sign) != 1) {
+			echo "Sign isn't specified\n";
+		} else if (strcmp("+", $sign) && strcmp("-", $sign) && strcmp("*", $sign) && strcmp("/", $sign) && strcmp("%", $sign)) {
+			echo "Sign isn't specified\n";
+			exit (1);
+		}
 		if (!strcmp("+", $sign)) {
 			echo $first + $second . "\n";
 		} else if (!strcmp("-", $sign)) {
@@ -16,11 +22,15 @@
 			echo $first * $second . "\n";
 		} else if (!strcmp("/", $sign)) {
 			if ($second == "0") {
-				echo "Division by zero\n";
+				echo "DivisionByZeroError\n";
 				exit (1);
 			}
 			echo $first / $second . "\n";
 		} else if (!strcmp("%", $sign)) {
+			if ($second == "0") {
+				echo "ModuloByZeroError\n";
+				exit (1);
+			}
 			echo $first % $second . "\n";
 		}
 	} else {

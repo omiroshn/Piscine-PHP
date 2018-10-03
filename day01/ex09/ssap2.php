@@ -3,18 +3,13 @@
 
 function ft_compare($str1, $str2) {
     $string = "abcdefghijklmnoprstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-    $i = 0;
     $sorted1 = strtolower($str1);
     $sorted2 = strtolower($str2);
-    while ($sorted1[$i] && $sorted2[$i]) {
+    for ($i = 0; $sorted1[$i] && $sorted2[$i]; $i++) {
         $pos1 = strpos($string, $sorted1[$i]);
         $pos2 = strpos($string, $sorted2[$i]);
-        if ($pos1 < $pos2) {
-            return (-1);
-        } else if ($pos1 > $pos2) {
-            return (1);
-        }
-        $i++;
+        if ($pos1 < $pos2) { return (-1); }
+        else if ($pos1 > $pos2) { return (1); }
     }
     if ($sorted1[$i])
         return (1);
@@ -22,6 +17,7 @@ function ft_compare($str1, $str2) {
         return (-1);
     return (0);
 }
+
 if ($argc > 1) {
     $array = array();
     for ($i = 1; $i < $argc; $i++)
@@ -51,4 +47,5 @@ if ($argc > 1) {
         foreach ($specials as $item)
             echo $item."\n";
 }
+
 ?>

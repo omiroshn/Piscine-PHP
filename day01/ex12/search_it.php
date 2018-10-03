@@ -11,7 +11,7 @@
 			}
 		}
 		if ($storage[$searched]) {
-			echo $storage[$searched]."\n";
+			echo $storage[$searched] . "\n";
 		}
 	}
 ?>
