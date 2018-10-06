@@ -1,6 +1,4 @@
 <?php
-	header();
+	header("Content-Type: text/plain");
 ?>
-<html>
-	<header>Hello</header>
-</html>
+<html><body>Hello</body></html>
