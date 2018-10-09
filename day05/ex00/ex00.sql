@@ -1,1 +1,1 @@
-CREATE DATABASE db_omiroshn;
+CREATE DATABASE IF NOT EXISTS `db_omiroshn`;
