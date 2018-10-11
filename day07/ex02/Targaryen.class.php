@@ -1,7 +1,6 @@
 <?php
 
 Class Targaryen {
-
 	public function getBurned() {
 		if (method_exists($this, 'resistsFire') === true
 			&& $this->resistsFire() === true) {
@@ -10,5 +9,4 @@ Class Targaryen {
 			return "burns alive";
 		}
 	}
-
 }
