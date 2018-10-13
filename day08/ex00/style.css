@@ -1,0 +1,31 @@
+td {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+#gameboard {
+	display: flex;
+	flex-direction: column;
+}
+
+#dice {
+	margin-left: 50px;
+}
+
+#field {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	border: 1px solid black;
+}
+
+#ship-1 {
+	width: 100px;
+	position: absolute;
+}
+
+#ship-2 {
+	width: 100px;
+	position: absolute;
+}
