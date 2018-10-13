@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jabascript</title>
+</head>
+<body>
+	<input type="text" id="left">
+	<select id="operation">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input type="text" id="right">
+	<input type="submit" value="Try me!" id="button">
+	<script>
+		var calculator = document.getElementById("button");
+
+		calculator.addEventListener("click", function() {
+			var leftValue = document.getElementById("left").value;
+			var rightValue = document.getElementById("right").value;
+			var l = parseInt(leftValue);
+			var r = parseInt(rightValue);
+			var operation = document.getElementById("operation").value;
+
+			if (l != leftValue || r != rightValue || l < 0 || r < 0) {
+				alert("Error :(");
+			} else if ((operation === "/" || operation === "%") && r === 0) {
+				console.log("It's over 9000!");
+				alert("It's over 9000!");
+			} else {
+				var result = eval(l + operation + r);
+				alert(result);
+				console.log(result);
+			}
+		});
+
+		setInterval(function() {
+			alert("Please, use me...");
+		}, 30000);
+	</script>
+</body>
+</html>

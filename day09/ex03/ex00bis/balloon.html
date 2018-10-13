@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jabascript</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="balloon" style="top: 50%; left: 50%; margin-top: -100px; margin-left: -100px; position: absolute; width: 200px; height: 200px; background-color: red; border-radius: 100%;"></div>
+	<script>
+		$(document).ready(function() {
+			var colorNum = 0;
+			var colors = ["red", "green", "blue"];
+
+			function increaseColorNum() {
+				colorNum = (colorNum + 1) % 3;
+				if (colorNum < 0) {
+					colorNum = 3 + colorNum;
+				}
+			}
+
+			function decreaseColorNum() {
+				colorNum = (colorNum - 1) % 3;
+				if (colorNum < 0) {
+					colorNum = 3 + colorNum;
+				}
+			}
+
+			$("#balloon").click(function() {
+				var size = parseInt($(this).css("width"));
+				var margin_top = parseInt($(this).css("margin-top"));
+				var margin_left = parseInt($(this).css("margin-left"));
+				if (size < 420) {
+					$(this).css("width", size + 10 + "px");
+					$(this).css("height",  size + 10 + "px");
+				} else {
+					$(this).css("width", "200px");
+					$(this).css("height", "200px");
+				}
+				var size = parseInt($(this).css("width"));
+				$(this).css("margin-top", -(size / 2) + "px");
+				$(this).css("margin-left", -(size / 2) + "px");
+				increaseColorNum();
+				$(this).css("backgroundColor", colors[colorNum]);
+			});
+
+			$("#balloon").mouseout(function() {
+				var size = parseInt($(this).css("width"));
+
+				if (size > 200) {
+					$(this).css("width", size -5 + "px");
+					$(this).css("height", size -5 + "px");
+					var size = parseInt($(this).css("width"));
+					$(this).css("margin-top", -(size / 2) + "px");
+					$(this).css("margin-left", -(size / 2) + "px");
+				}
+				decreaseColorNum();
+				$(this).css("backgroundColor", colors[colorNum]);
+			});
+		})
+	</script>
+</body>
+</html>

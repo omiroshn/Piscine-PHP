@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jabascript</title>
+</head>
+<body>
+	<div id="balloon" style="top: 50%; left: 50%; margin-top: -100px; margin-left: -100px; position: absolute; width: 200px; height: 200px; background-color: red; border-radius: 100%;"></div>
+	<script>
+		var balloon = document.getElementById("balloon");
+		var colorNum = 0;
+		var colors = ["red", "green", "blue"];
+
+		function increaseColorNum() {
+			colorNum = (colorNum + 1) % 3;
+			if (colorNum < 0) {
+				colorNum = 3 + colorNum;
+			}
+		}
+
+		function decreaseColorNum() {
+			colorNum = (colorNum - 1) % 3;
+			if (colorNum < 0) {
+				colorNum = 3 + colorNum;
+			}
+		}
+
+		balloon.addEventListener("click", function() {
+			var size = parseInt(balloon.style.width);
+			var margin_top = parseInt(balloon.style.marginTop);
+			var margin_left = parseInt(balloon.style.marginLeft);
+			if (size < 420) {
+				balloon.style.width = size + 10 + "px";
+				balloon.style.height = size + 10 + "px";
+			} else {
+				balloon.style.width = "200px";
+				balloon.style.height = "200px";
+			}
+			var size = parseInt(balloon.style.width);
+			balloon.style.marginTop = -(size / 2) + "px";
+			balloon.style.marginLeft = -(size / 2) + "px";
+			increaseColorNum();
+			balloon.style.backgroundColor = colors[colorNum];
+		});
+
+		balloon.addEventListener("mouseout", function() {
+			var size = parseInt(balloon.style.width);
+
+			if (size > 200) {
+				balloon.style.width = size - 5 + "px";
+				balloon.style.height = size -5 + "px";
+			}
+			var size = parseInt(balloon.style.width);
+			balloon.style.marginTop = -(size / 2) + "px";
+			balloon.style.marginLeft = -(size / 2) + "px";
+			decreaseColorNum();
+			balloon.style.backgroundColor = colors[colorNum];
+		});
+	</script>
+</body>
+</html>
