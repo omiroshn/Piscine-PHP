@@ -1,0 +1,47 @@
+td {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+#gameboard {
+	display: flex;
+	flex-direction: column;
+}
+
+#dice {
+	margin-left: 50px;
+}
+
+#field {
+	position: relative;
+	width: 2000px;
+	height: 1100px;
+	border: 1px solid black;
+}
+
+.grid {
+	position: relative;
+	/*width: 2000px;
+	height: 1100px;*/
+}
+
+.container {
+    position: fixed;
+    left: 350px;
+    padding: 0;
+    margin: 0;
+    background-color: #ff00ff;
+}
+
+.left-element {
+    background: green;
+    display: inline-block;
+    float: left;
+}
+
+.right-element {
+    background: red;
+    display: inline-block;
+    float: left;
+}
