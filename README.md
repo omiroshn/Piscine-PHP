@@ -1,4 +1,4 @@
-Piscine PHP
+Piscine PHP ```124/125```
 ===
 ### [Day 00] - HTML & CSS ```125/125```
 ### [Day 01] - INTRODUCTION TO PHP ```100/100```
